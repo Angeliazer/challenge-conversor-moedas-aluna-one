@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("ok");
-
-
         Scanner leitura = new Scanner(System.in);
         var opc = 0;
 
