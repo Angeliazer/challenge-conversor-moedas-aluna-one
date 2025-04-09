@@ -1,29 +1,36 @@
 
-# Projeto Conversor de Moedas 💰
-
-
 <div align="center">
   <h1 align="center">
-    # Projeto Conversor de Moedas 💰
+     Projeto Conversor de Moedas 💰
     <br />
     <br />
   </h1>
 </div>
 
+<div align="center"> 
+
+  Menu
+
+![image](https://github.com/user-attachments/assets/d26f4ea4-f976-43aa-b878-7ef8d62cde32)
+
+</div>
+ 
+
 ## Informações
+Um simples conversor de algumas moedas.
 
-Amigo secreto é uma página para sortear aleatóriamente um amigo secreto colocado em uma lista.
+* Dólar            ==> Peso Argentino 
+* Peso Argentino   ==> Dólar
+* Dólar           ==> Real Brasileiro
+* Real Brasileiro ==> Dólar
+* Dólar           ==> Peso Colombiano
+* Peso Colombiano ==> Dólar
 
+## Como utilizar
 
-### Como utilizar
 <div>
-  <p>Coloque um nome no campo "Digite um nome" e click em no botão "Adicionar" <img src="https://github.com/user-attachments/assets/3d620983-2d19-4b37-a22c-b02b2d66c34b" alt="Botão Adicionar" width=50px height: 10px> </p>
-  <p>A cada nome adicionado, os mesmos vão aparecendo abaixo do campo "Digite um nome"</p>
-  <p>Após preencher a lista com o nomes, você poderá efetuar o sorteio apertando no botão "Sortear Amigo" <img src="https://github.com/user-attachments/assets/9baaee59-a658-4fbf-9824-e3c4d735f97c" alt="Botão Sortear Amigo" width=80px height: 60px></p>
-
-
-
-
+  <p>Selecionada a opção, será solicitado digitar a quantidade de moeda que quer converter.</p>
+  <p>Informado o valor, será apresentado o valor convertido para a moeda escolhida.</p>
 
 ![Java](https://img.shields.io/badge/Language-Java-red?logo=java&logoColor=white)
 
