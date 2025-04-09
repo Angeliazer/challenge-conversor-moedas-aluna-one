@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class RetornaValorMoeda {
 
-    public double retornoValor(String string, String moeda){
+    public double retornaValorConvertido(String string, String moeda){
         Gson gson = new Gson();
         Map<String, Double> taxas = gson.fromJson(string, Map.class);
         return taxas.get(moeda);

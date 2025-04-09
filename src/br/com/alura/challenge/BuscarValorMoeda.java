@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class BuscarValorMoeda {
 
-    public TaxaConversao buscarValor(String moeda){
+    public TaxaConversao buscaValores(String moeda){
 
         HttpClient client = HttpClient.newHttpClient();
 

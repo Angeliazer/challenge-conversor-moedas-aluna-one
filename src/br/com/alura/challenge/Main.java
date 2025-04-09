@@ -32,56 +32,56 @@ public class Main {
             switch (opc) {
 
                 case 1: {
-                    var valor = buscar.buscarValor("USD");   // Busca na Api os valores para conversão
+                    var valor = buscar.buscaValores("USD");   // Busca na Api os valores para conversão
                     var valorParaConverter = digita.digitarValor(); // Digita o valor da moeda a ser convertida
                     RetornaValorMoeda valorMoeda = new RetornaValorMoeda();
                     String stringParaProcura = valor.conversion_rates().toString(); // Transforma retorno da api em string;
-                    var valorConversao = valorMoeda.retornoValor(stringParaProcura, "ARS"); // Retorna o valor da moeda a ser convertida
+                    var valorConversao = valorMoeda.retornaValorConvertido(stringParaProcura, "ARS"); // Retorna o valor da moeda a ser convertida
                     System.out.println(String.format("Valor de %.2f %s %.7f %s",valorParaConverter,"[USD] corresponde ao valor final de ==>> ", (valorParaConverter * valorConversao)," [ARS]"));
                     break;
                 }
                 case 2: {
-                    var valor = buscar.buscarValor("ARS");
+                    var valor = buscar.buscaValores("ARS");
                     var valorParaConverter = digita.digitarValor();
                     RetornaValorMoeda valorMoeda = new RetornaValorMoeda();
                     String stringParaProcura = valor.conversion_rates().toString();
-                    var valorConversao = valorMoeda.retornoValor(stringParaProcura, "USD");
+                    var valorConversao = valorMoeda.retornaValorConvertido(stringParaProcura, "USD");
                     System.out.println(String.format("Valor de %.2f %s %.7f %s",valorParaConverter,"[ARS] corresponde ao valor final de ==>> ", (valorParaConverter * valorConversao)," [USD]"));
                     break;
                 }
                 case 3: {
-                    var valor = buscar.buscarValor("USD");
+                    var valor = buscar.buscaValores("USD");
                     var valorParaConverter = digita.digitarValor();
                     RetornaValorMoeda valorMoeda = new RetornaValorMoeda();
                     String stringParaProcura = valor.conversion_rates().toString();
-                    var valorConversao = valorMoeda.retornoValor(stringParaProcura, "BRL");
+                    var valorConversao = valorMoeda.retornaValorConvertido(stringParaProcura, "BRL");
                     System.out.println(String.format("Valor de %.2f %s %.7f %s",valorParaConverter,"[USD] corresponde ao valor final de ==>> ", (valorParaConverter * valorConversao)," [BRL]"));
                     break;
                 }
                 case 4: {
-                    var valor = buscar.buscarValor("BRL");
+                    var valor = buscar.buscaValores("BRL");
                     var valorParaConverter = digita.digitarValor();
                     RetornaValorMoeda valorMoeda = new RetornaValorMoeda();
                     String stringParaProcura = valor.conversion_rates().toString();
-                    var valorConversao = valorMoeda.retornoValor(stringParaProcura, "USD");
+                    var valorConversao = valorMoeda.retornaValorConvertido(stringParaProcura, "USD");
                     System.out.println(String.format("Valor de %.2f %s %.7f %s",valorParaConverter,"[BRL] corresponde ao valor final de ==>> ", (valorParaConverter * valorConversao)," [USD]"));
                     break;
                 }
                 case 5: {
-                    var valor = buscar.buscarValor("USD");
+                    var valor = buscar.buscaValores("USD");
                     var valorParaConverter = digita.digitarValor();
                     RetornaValorMoeda valorMoeda = new RetornaValorMoeda();
                     String stringParaProcura = valor.conversion_rates().toString();
-                    var valorConversao = valorMoeda.retornoValor(stringParaProcura, "COP");
+                    var valorConversao = valorMoeda.retornaValorConvertido(stringParaProcura, "COP");
                     System.out.println(String.format("Valor de %.2f %s %.7f %s",valorParaConverter,"[USD] corresponde ao valor final de ==>> ", (valorParaConverter * valorConversao)," [COP]"));
                     break;
                 }
                 case 6: {
-                    var valor = buscar.buscarValor("COP");
+                    var valor = buscar.buscaValores("COP");
                     var valorParaConverter = digita.digitarValor();
                     RetornaValorMoeda valorMoeda = new RetornaValorMoeda();
                     String stringParaProcura = valor.conversion_rates().toString();
-                    var valorConversao = valorMoeda.retornoValor(stringParaProcura, "USD");
+                    var valorConversao = valorMoeda.retornaValorConvertido(stringParaProcura, "USD");
                     System.out.println(String.format("Valor de %.2f %s %.7f %s",valorParaConverter,"[COP] corresponde ao valor final de ==>> ", (valorParaConverter * valorConversao)," [USD]"));
                     break;
                 }
